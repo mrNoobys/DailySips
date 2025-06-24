@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kopi & Teh</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Beranda | Kopi & Teh</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
   <header>
-    <h1>Selamat Datang di Dunia Kopi & Teh</h1>
+    <h1>Kopi & Teh: Cerita, Sejarah, dan Manfaat</h1>
     <nav>
       <ul>
-        <li><a href="#pengantar">Pengantar</a></li>
-        <li><a href="#sejarah">Sejarah</a></li>
-        <li><a href="#manfaat">Manfaat</a></li>
+        <li><a href="posting1.html">Apa Itu Kopi dan Teh</a></li>
+        <li><a href="posting2.html">Sejarah Kopi</a></li>
+        <li><a href="posting3.html">Sejarah Teh</a></li>
+        <li><a href="posting4.html">Manfaat Kopi</a></li>
+        <li><a href="posting5.html">Manfaat Teh</a></li>
       </ul>
     </nav>
   </header>
-
-  <section id="pengantar">
-    <h2>Apa Itu Kopi dan Teh?</h2>
-    <p>Kopi dan teh adalah dua minuman paling populer di dunia...</p>
-  </section>
-
-  <section id="sejarah">
-    <h2>Sejarah Kopi dan Teh</h2>
-    <p>Kopi pertama kali ditemukan di Ethiopia, sedangkan teh berasal dari Tiongkok...</p>
-  </section>
-
-  <section id="manfaat">
-    <h2>Manfaat Kopi dan Teh</h2>
-    <ul>
-      <li>Meningkatkan konsentrasi</li>
-      <li>Bersifat relaksasi</li>
-      <li>Kaya antioksidan</li>
-    </ul>
-  </section>
-
+  <main>
+    <p>Selamat datang di website kami! Temukan informasi seputar kopi dan teh, mulai dari sejarah hingga manfaatnya untuk fisik dan psikis.</p>
+    <img src="images/kopi-tablet.jpg" alt="Secangkir Kopi hitam">
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="POST">
+      <label>Nama:</label><br>
+      <input type="text" name="nama"><br><br>
+      <label>Pesan:</label><br>
+      <textarea name="pesan"></textarea><br><br>
+      <input type="submit" value="Kirim">
+    </form>
+    <button onclick="scrollToTop()" id="scrollBtn">↑</button>
+  </main>
   <footer>
-    <p>&copy; 2025 Website Kopi & Teh. Dibuat oleh Hanrsy.</p>
+    <p>&copy; 2025 Kopi & Teh UAS</p>
+
   </footer>
+  <script>
+  window.onscroll = function() {
+    document.getElementById("scrollBtn").style.display = 
+      window.scrollY > 200 ? "block" : "none";
+  };
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
+
 </body>
+
 </html>
