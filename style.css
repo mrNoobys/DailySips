@@ -84,3 +84,17 @@ scrollBtn {
   display: none;
   z-index: 1000;
 }
+.tombol-link {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none; 
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tombol-link:hover {
+  background-color: #e65c00; 
+}
