@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f5f0;
+  background-color: #D7CCC8;
   color: #333;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ h1, h2{
 }
 
 header {
-  background-color: #4b2e2e;
+  background-color: #4E342E;
   color: white;
   padding: 20px;
   text-align: center;
@@ -87,9 +87,29 @@ scrollBtn {
   display: none;
   z-index: 1000;
 }
+
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+section.intro {
+  background-color: #FFF3E4;
+}
+
+section.kopi {
+  background-color: #a4976e;
+  color: white;
+}
+
+section.teh {
+  background-color: #DCE1C2;
+}
+
 .tombol-link {
   display: inline-block;
-  background-color: #ff6600;
+  background-color: #4E342E;
   color: white;
   padding: 10px 15px;
   text-decoration: none; 
@@ -100,7 +120,20 @@ scrollBtn {
 }
 
 .tombol-link:hover {
-  background-color: #e65c00; 
+  background-color: #8D8D6D; 
+}
+
+.gambar-dua {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.gambar-dua img {
+  width: 45%;
+  border-radius: 12px;
 }
 
 @media (max-widht:600px) {
