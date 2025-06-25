@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.6;
-  padding: 0 15px;
+  padding: 0 0px;
 }
 h1, h2{
   font-family: 'Playfair Display', serif;
@@ -65,28 +65,15 @@ main {
 
 footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 0 0;
   background-color: #4b2e2e;
   color: white;
   position:sticky;
   bottom: 0;
   width: 100%;
+  border-radius: 5px;
 }
 
-scrollBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #4b2e2e;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  z-index: 1000;
-}
 
 section {
   padding: 20px;
@@ -135,6 +122,102 @@ section.teh {
   width: 45%;
   border-radius: 12px;
 }
+
+/* Hero ala Netflix */
+.hero {
+  background-image: url('images/beranda.jpg'); /* Ganti gambar sesuai yang kamu punya */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: #3a2e2b;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.hero a {
+  background-color: #a9746e;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.slider {
+  padding: 30px 15px;
+  background-color: #fff8f2;
+  border-radius: 12px;
+}
+
+.slider h3 {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #5c3d2e;
+}
+
+.card-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card {
+  min-width: 160px;
+  background-color: #f7f1eb;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.nav-posting {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.nav-posting a {
+  background-color: #a9746e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-posting a:hover {
+  background-color: #8d5f59;
+}
+
 
 @media (max-widht:600px) {
   h1 {
