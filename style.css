@@ -221,13 +221,13 @@ section.teh {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap; /* Penting agar bisa turun */
+  flex-wrap: wrap;
 }
 
 .gambar-bareng img {
   max-width: 100%;
   height: auto;
-  width: 48%; /* Agar dua gambar sejajar di desktop */
+  width: 48%; 
   border-radius: 10px;
 }
 
