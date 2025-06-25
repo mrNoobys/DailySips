@@ -8,6 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.6;
+  padding: 0 15px;
 }
 h1, h2{
   font-family: 'Playfair Display', serif;
@@ -45,6 +47,7 @@ img {
   display: block;
   margin: 20px auto;
   border-radius: 10px;
+  height: auto;
 }
 
 img:hover {
@@ -62,7 +65,7 @@ main {
 
 footer {
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
   background-color: #4b2e2e;
   color: white;
   position:sticky;
@@ -93,8 +96,25 @@ scrollBtn {
   border-radius: 8px;
   font-weight: bold;
   transition: background-color 0.3s;
+  margin: 10px 0;
 }
 
 .tombol-link:hover {
   background-color: #e65c00; 
+}
+
+@media (max-widht:600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .tombol-link {
+    width: 100%;
+    text-align: center;
+  }
 }
