@@ -123,14 +123,13 @@ section.teh {
   border-radius: 12px;
 }
 
-/* Hero ala Netflix */
 .hero {
-  background-image: url('images/beranda.jpg'); /* Ganti gambar sesuai yang kamu punya */
+  background-image: url('images/kopi-tablet.jpg');
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
   text-align: center;
-  color: #3a2e2b;
+  color: white;
   margin-bottom: 40px;
   border-radius: 12px;
 }
@@ -218,6 +217,19 @@ section.teh {
   background-color: #8d5f59;
 }
 
+.gambar-bareng {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Penting agar bisa turun */
+}
+
+.gambar-bareng img {
+  max-width: 100%;
+  height: auto;
+  width: 48%; /* Agar dua gambar sejajar di desktop */
+  border-radius: 10px;
+}
 
 @media (max-widht:600px) {
   h1 {
@@ -233,4 +245,8 @@ section.teh {
     width: 100%;
     text-align: center;
   }
+  .gambar-dua img {
+    width: 100%;
+  }
+  
 }
